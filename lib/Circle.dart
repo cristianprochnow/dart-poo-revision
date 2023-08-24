@@ -18,9 +18,11 @@ class Circle extends Shape {
   }
   double get radius => _radius;
 
+  @override
   double getArea() => pi * pow(_radius, 2);
 
-  double getCircumference() => 2 * pi * _radius;
+  @override
+  double getPerimeter() => 2 * pi * _radius;
 
   @override
   String toString() => 'Circle[${super.toString()}, radius=$_radius]';

@@ -1,4 +1,4 @@
-class Shape {
+abstract class Shape {
   late String _color;
   late bool _filled;
 
@@ -9,6 +9,9 @@ class Shape {
   String getColor() => _color;
 
   bool getFilled() => _filled;
+
+  double getArea();
+  double getPerimeter();
 
   @override
   String toString() => "Shape[color=${getColor()}, filled=${getFilled()}]";

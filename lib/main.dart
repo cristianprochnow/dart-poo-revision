@@ -14,7 +14,7 @@ void main() {
 
   print('Raio do círculo: ${circle.radius}');
   print('Área do círculo: ${circle.getArea()}');
-  print('Cincunferência do círculo: ${circle.getCircumference()}');
+  print('Cincunferência do círculo: ${circle.getPerimeter()}');
   print('Círculo padrão: $circle');
   print('Círculo com raio: $circleWithRadius');
 
