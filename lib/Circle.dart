@@ -1,6 +1,8 @@
 import 'dart:math';
 
-class Circle {
+import 'package:dart_poo_revision/Shape.dart';
+
+class Circle extends Shape {
   double _radius; // Não pode ser nulo.
   double? maybeRadius; // Pode ser nulo.
 
@@ -17,5 +19,5 @@ class Circle {
   double getCircumference() => 2 * pi * _radius;
 
   @override
-  String toString() => 'Circle[radius=$_radius]';
+  String toString() => 'Circle[${super.toString()}, radius=$_radius]';
 }
