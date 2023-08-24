@@ -7,7 +7,11 @@ class Circle extends Shape {
   double? maybeRadius; // Pode ser nulo.
 
   Circle() : _radius = 1.0; // Construtor normal.
+
   Circle.withRadius(this._radius); // Construtor nomeado.
+
+  Circle.withRadiusAndColorAndFilled(this._radius, String color, bool filled)
+      : super.withColorAndFilled(color, filled);
 
   set radius(double radius) {
     _radius = radius;

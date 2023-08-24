@@ -4,6 +4,7 @@ import 'package:dart_poo_revision/Rectangle.dart';
 void main() {
   Circle circle = Circle();
   Circle circleWithRadius = Circle.withRadius(4.3);
+  Circle circleWithRadiusColorFilled = Circle.withRadiusAndColorAndFilled(5.6, 'pink', true);
 
   print('Raio do círculo: ${circle.radius}');
   print('Raio do outro círculo: ${circleWithRadius.radius}');
@@ -31,4 +32,6 @@ void main() {
   print('Altura do Outro Retângulo: ${rectangleWithSizes.getHeight()}');
   print('Área do Outro Retângulo: ${rectangleWithSizes.getArea()}');
   print('Perímetro do Outro Retângulo: ${rectangleWithSizes.getPerimeter()}');
+
+  print('Círculo completasso: ${circleWithRadiusColorFilled.toString()}');
 }
