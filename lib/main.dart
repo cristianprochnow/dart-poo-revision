@@ -1,5 +1,6 @@
 import 'package:dart_poo_revision/Circle.dart';
 import 'package:dart_poo_revision/Rectangle.dart';
+import 'package:dart_poo_revision/Square.dart';
 
 void main() {
   Circle circle = Circle();
@@ -18,14 +19,16 @@ void main() {
   print('Círculo com raio: $circleWithRadius');
 
   Rectangle rectangle = Rectangle();
+  Rectangle rectangleWithSizes = Rectangle.withSizes(5.6, 4.3);
+  Rectangle rectangleCompleted = Rectangle.withSizesColorFilled(3.4, 2.6, 'purple', false);
+
+  Square square = Square.withSide(3.5);
 
   print('Retângulo: ${rectangle.toString()}');
   print('Base do Retângulo: ${rectangle.getBase()}');
   print('Altura do Retângulo: ${rectangle.getHeight()}');
   print('Área do Retângulo: ${rectangle.getArea()}');
   print('Perímetro do Retângulo: ${rectangle.getPerimeter()}');
-
-  Rectangle rectangleWithSizes = Rectangle.withSizes(5.6, 4.3);
 
   print('Outro Retângulo: ${rectangleWithSizes.toString()}');
   print('Base do Outro Retângulo: ${rectangleWithSizes.getBase()}');
@@ -34,4 +37,7 @@ void main() {
   print('Perímetro do Outro Retângulo: ${rectangleWithSizes.getPerimeter()}');
 
   print('Círculo completasso: ${circleWithRadiusColorFilled.toString()}');
+  print('Retângulo completasso: ${rectangleCompleted.toString()}');
+
+  print('Quadrado: ${square.toString()}');
 }
