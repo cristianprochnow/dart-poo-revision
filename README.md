@@ -14,6 +14,14 @@ Circle(): this.radius = 1.0; // Construtor normal.
 Circle.withRadius(this.radius); // Construtor nomeado.
 ```
 
+## `interface`
+
+Por padrão, no Dart, toda classe já é, implicitamente, uma interface. Sendo assim, não há o uso da palavra-chave `interface`.
+
+## `final`
+
+Define uma constante para o valor que foi definido. Então, se for uma propriedade que não muda de valor, o operador `final` define que é uma constante na classe.
+
 ## Métodos
 
 O Dart é bem parecido com JavaScript até, pois há vários tipos implícitos nas classes. Quando crio qualquer `class`, automaticamente já estou extendendo o **objeto global**.
